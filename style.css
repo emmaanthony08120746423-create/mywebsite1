@@ -217,3 +217,118 @@ body{
 .close:hover {
     color: #ccc;
 }
+
+/* Contact Page */
+
+.contact-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:80px 8%;
+}
+
+
+.contact-info,
+.contact-form{
+
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+
+    animation:slideUp 1s ease;
+}
+
+
+.contact-info{
+    max-width:400px;
+}
+
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+}
+
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+
+}
+
+
+.contact-form textarea{
+
+    height:120px;
+    resize:none;
+
+}
+
+
+.whatsapp-btn{
+
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+.whatsapp-btn:hover{
+
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+
+
+@keyframes slideUp{
+
+from{
+    opacity:0;
+    transform:translateY(50px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.contact-container{
+
+    flex-direction:column;
+
+}
+
+.contact-form{
+
+    width:100%;
+
+}
+
+}

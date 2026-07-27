@@ -2,26 +2,24 @@
 
 const form = document.getElementById("contact-form");
 
-if (form) {
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        const name = document.getElementById("name").value;
-        const phone = document.getElementById("phone").value;
-        const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
 
-        const whatsappNumber = "2348XXXXXXXXX"; // Replace with your dad's WhatsApp number
+    const whatsappNumber = "2348120746423";
 
-        const text = Hello Tony Furniture Brand!
+    const text = `Hello Tony Furniture Brand!
 
 My Name: ${name}
-Phone: ${phone}
+Phone number: ${phone}
 
 Message:
-${message};
+${message}`;
 
-        const url = "https://wa.me/2348120746423";
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
-        window.open(url, "_blank");
-    });
-}
+    window.location.href = url;
+});
