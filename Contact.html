@@ -1,16 +1,35 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="javascript:history.back()" class="back-btn">← Back</a>
 
 <section class="page">
     <h1>Contact Us</h1>
 
-    <p>📞 Phone: +234 XXX XXX XXXX</p>
-    <p>📧 Email: info@tonyfurniture.com</p>
+    <p>📞 Phone: +234 803 210 8288</p>
+    <p>📧 Email: tonydaudu@gmail.com</p>
     <p>📍 Address: Your City, Nigeria</p>
 </section>
 
-<script src="js/script.js"></script>
+<form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+    <textarea id="message" placeholder="Tell us what furniture you need..." required></textarea>
+
+    <button type="submit">Send on WhatsApp</button>
+</form>
+
+<script src="contact.js"></script>
+
