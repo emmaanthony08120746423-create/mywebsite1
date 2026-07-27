@@ -510,3 +510,120 @@ to{
     }
 
 }
+
+/* ==========================
+   ABOUT PAGE
+========================== */
+
+.about-page{
+    min-height:100vh;
+    padding:100px 8%;
+    text-align:center;
+}
+
+.about-page h1{
+    font-size:48px;
+    margin-bottom:40px;
+    color:#fff;
+    font-family:'Cinzel', serif;
+}
+
+.about-card{
+    max-width:900px;
+    margin:25px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.4s ease;
+    animation:fadeUp 0.8s ease;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.4);
+}
+
+.about-card h2{
+    color:#d4af37;
+    margin-bottom:15px;
+    font-size:28px;
+    font-family:'Cinzel', serif;
+}
+
+.about-card p{
+    color:#fff;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.about-card ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+.about-card ul li{
+    margin:12px 0;
+    font-size:18px;
+    color:#fff;
+    transition:0.3s;
+}
+
+.about-card ul li:hover{
+    color:#d4af37;
+    transform:translateX(10px);
+}
+
+.about-card .btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.about-card .btn:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+   .floating-call{
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    background: #007BFF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 35px;
+    z-index: 9999;
+
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+    from{
+        bottom:100px;
+    }
+
+    to{
+        bottom:120px;
+    }
+} 
