@@ -9,7 +9,7 @@ form.addEventListener("submit", function (e) {
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
 
-    const whatsappNumber = "2348120746423";
+    const whatsappNumber = "2348032108288";
 
     const text = `Hello Tony Furniture Brand!
 
