@@ -34,10 +34,17 @@ nav{
 }
 
 .logo{
-    font-size:32px;
+    font-size:28px;
     color:#d4af37;
     font-family:'Cinzel',serif;
+    white-space: nowrap;
 }
+
+.logo{
+    flex: 1;
+    white-space: nowrap;
+}
+    
 
 nav ul{
     display:flex;
@@ -627,3 +634,32 @@ to{
         bottom:120px;
     }
 } 
+
+
+.hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #5c4033;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hero-content {
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
