@@ -2,7 +2,7 @@
 
 function contactWhatsApp(product) {
 
-    const phone = "2348120746423";
+    const phone = "2348032108288";
 
     const message = `Hello Tony Furniture Brand,
 
